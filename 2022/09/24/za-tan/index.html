@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="404, Shirasawa">
-    <meta name="description" content="个人记录">
+    <meta name="keywords" content="文章摘要, Shirasawa">
+    <meta name="description" content="Spring的IOC和DI">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>404 | Shirasawa</title>
+    <title>文章摘要 | Shirasawa</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -38,9 +38,7 @@
 
 
 
-    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
     <link rel="stylesheet" href="/css/post.css">
-
 
 
 
@@ -331,29 +329,16 @@
 
 </header>
 
-    <style type="text/css">
-    /* don't remove. */
-    .about-cover {
-        height: 90.2vh;
-    }
-</style>
-<div class="bg-cover pd-header about-cover">
-    <div class="container">
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Shirasawa-zs/BlogImage@main/img/20220925143121.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
-            <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+            <div class="col s12 m12 l12">
                 <div class="brand">
-                    <div class="title center-align">
-                        404 Sorry 您找的页面不存在！
-                    </div>
-                    <div class="title center-align">
-                        试试右上角的<span style="color:blue;font-weight:bold">搜索</span>功能？
-                    </div>
-                    <div class="title center-align">
-                        <a href="/" target="_blank">返回首页</a>
-                    </div>
-                    <div class="description center-align">
-                        Oops～，我崩溃了！找不到你想要的页面 :(
-                    </div>
+                    <h1 class="description center-align post-title">文章摘要</h1>
                 </div>
             </div>
         </div>
@@ -361,11 +346,377 @@
 </div>
 
 
-    <script>
-        // 每天切换 banner 图.  Switch banner image every day.
-        var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-        $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+
+
+<main class="container content">
+
+    
+    <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E6%9D%82%E8%B0%88/">
+                                <span class="chip bg-color">杂谈</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E6%96%87%E7%AB%A0/" class="post-category">
+                                文章
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2022-09-24
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2022-09-25
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    256
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    1 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="Hexo一些有用的博客"><a href="#Hexo一些有用的博客" class="headerlink" title="Hexo一些有用的博客"></a>Hexo一些有用的博客</h1><h2 id="1-hexo手把手教你布置"><a href="#1-hexo手把手教你布置" class="headerlink" title="1.hexo手把手教你布置"></a>1.hexo手把手教你布置</h2><p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/484633431/answer/2476184917?utm_campaign=&utm_medium=social&utm_oi=996162393482932224&utm_psn=1557492957648949248&utm_source=qq">(2 封私信 &#x2F; 12 条消息) 如何使用 Github Pages 和 Hexo 搭建个人博客？ - 知乎 (zhihu.com)</a></p>
+<p>需要注意的是，现在github的默认分支是main，需要把_config.yaml的配置文件里的deploy的branch改成main</p>
+<h2 id="2-设计模式视频"><a href="#2-设计模式视频" class="headerlink" title="2.设计模式视频"></a>2.设计模式视频</h2><p><a target="_blank" rel="noopener" href="https://www.aliyundrive.com/s/SNMmtCV3twb">https://www.aliyundrive.com/s/SNMmtCV3twb</a></p>
+<h2 id="3-设计模式网站"><a href="#3-设计模式网站" class="headerlink" title="3.设计模式网站"></a>3.设计模式网站</h2><p><a target="_blank" rel="noopener" href="https://java-design-patterns.com/">https://java-design-patterns.com/</a><br><a target="_blank" rel="noopener" href="https://refactoringguru.cn/design-patterns/iterator">https://refactoringguru.cn/design-patterns/iterator</a></p>
+<h2 id="4-教程网站"><a href="#4-教程网站" class="headerlink" title="4.教程网站"></a>4.教程网站</h2><p><a target="_blank" rel="noopener" href="https://www.baeldung.com/">https://www.baeldung.com/</a></p>
+<h2 id="5-Hexo主题官方文档"><a href="#5-Hexo主题官方文档" class="headerlink" title="5.Hexo主题官方文档"></a>5.Hexo主题官方文档</h2><p><a target="_blank" rel="noopener" href="https://caodong-street.github.io/2021/09/18/hexo-bo-ke-zhu-ti-zhi-hexo-theme-matery-de-jie-shao/">Hexo博客主题之hexo-theme-matery的介绍（转载于blinkfox） | Cao Dong (caodong-street.github.io)</a></p>
+<h2 id="6-MarkDown官方文档"><a href="#6-MarkDown官方文档" class="headerlink" title="6.MarkDown官方文档"></a>6.MarkDown官方文档</h2><p><a target="_blank" rel="noopener" href="https://markdown.com.cn/basic-syntax/">Markdown 基本语法 | Markdown 官方教程</a></p>
+<h2 id="7-阿里云效"><a href="#7-阿里云效" class="headerlink" title="7.阿里云效"></a>7.阿里云效</h2><p><a target="_blank" rel="noopener" href="https://help.aliyun.com/document_detail/423521.html">云效移动端快速入门 (aliyun.com)</a></p>
+<h2 id="8-Git相关"><a href="#8-Git相关" class="headerlink" title="8.Git相关"></a>8.Git相关</h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/xu_song/article/details/94734095">(31条消息) 代码提交到Github的3种方法_xu_song的博客-CSDN博客_提交代码到github</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/ye-feng-yu/p/11108696.html">将IDEA工程代码提交到Github - 代码梦工厂 - 博客园 (cnblogs.com)</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/CherishTheYouth/p/CherishTheYouth_20210426.html">Git实用技巧35招 - CherishTheYouth - 博客园 (cnblogs.com)</a></p>
+<h2 id="9-搭建图床"><a href="#9-搭建图床" class="headerlink" title="9.搭建图床"></a>9.搭建图床</h2><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/489236769">使用Github+picGo搭建图床，保姆级教程来了 - 知乎 (zhihu.com)</a></p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">scy</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/09/24/za-tan/">https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/09/24/za-tan/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">scy</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
     </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E6%9D%82%E8%B0%88/">
+                                    <span class="chip bg-color">杂谈</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/null" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/null" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2022/09/25/java-she-ji-mo-shi/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="设计模式第一次">
+                        
+                        <span class="card-title">设计模式第一次</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            设计模式前瞻
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-09-25
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%90%8E%E7%AB%AF/" class="post-category">
+                                    后端
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/java/">
+                        <span class="chip bg-color">java</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
+                        <span class="chip bg-color">设计模式</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/09/23/ioc-he-di/">
+                    <div class="card-image">
+                        
+                        <img src="https://cdn.jsdelivr.net/gh/Shirasawa-zs/BlogImage@main/img/20220925112758.png" class="responsive-img" alt="IOC和DI">
+                        
+                        <span class="card-title">IOC和DI</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Spring的IOC和DI
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-23
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%90%8E%E7%AB%AF/" class="post-category">
+                                    后端
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/spring/">
+                        <span class="chip bg-color">spring</span>
+                    </a>
+                    
+                    <a href="/tags/java/">
+                        <span class="chip bg-color">java</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+
+    
+
+</main>
+
 
 
 
