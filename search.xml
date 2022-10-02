@@ -4,6 +4,58 @@
   
     
     <entry>
+      <title>自动装配原理</title>
+      <link href="/2022/10/07/zi-dong-zhuang-pei-yuan-li/"/>
+      <url>/2022/10/07/zi-dong-zhuang-pei-yuan-li/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 后端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> java </tag>
+            
+            <tag> SpringBoot </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Git简记</title>
+      <link href="/2022/10/02/git/"/>
+      <url>/2022/10/02/git/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><p>2022-10-2</p><p>摆烂的一天，不怎么想写代码，索性看看廖雪峰的Git顺便记录下一些有帮助的东西，以便于自己回忆和查找相关的Git命令</p><p>Git是分布式版本控制系统，在我的理解之中，可以这样理解如果一个系统被git管理了，就相当于所有参与此系统的工作人员的所有修改记录都会被记录到git之中，并且保存每一个版本，当我们系统想要去推倒重建时，可以退回版本。当然如果我们参与系统不同模块构建的工作人员也可以通过git进行工作模块的合并，使之真正成为一个系统。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 其他开发加点 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>SpringBoot简介1</title>
       <link href="/2022/09/27/spring-he-springboot-jian-jie/"/>
       <url>/2022/09/27/spring-he-springboot-jian-jie/</url>
@@ -22,7 +74,7 @@
             
             <tag> java </tag>
             
-            <tag> Spring </tag>
+            <tag> SpringBoot </tag>
             
         </tags>
       
