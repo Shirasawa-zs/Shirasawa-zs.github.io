@@ -6,7 +6,7 @@
   <link href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/atom.xml" rel="self"/>
   
   <link href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/"/>
-  <updated>2020-08-07T08:58:50.000Z</updated>
+  <updated>2022-10-08T04:17:19.104Z</updated>
   <id>https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/</id>
   
   <author>
@@ -17,23 +17,29 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>JWT</title>
     <link href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/10/08/jwt-shi-zhan-jiao-cheng/"/>
     <id>https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/10/08/jwt-shi-zhan-jiao-cheng/</id>
-    <published>2022-10-08T04:14:18.441Z</published>
-    <updated>2020-08-07T08:58:50.000Z</updated>
+    <published>2022-10-08T04:15:00.000Z</published>
+    <updated>2022-10-08T04:17:19.104Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;JWT-实战教程&quot;&gt;&lt;a href=&quot;#JWT-实战教程&quot; class=&quot;headerlink&quot; title=&quot;JWT 实战教程&quot;&gt;&lt;/a&gt;JWT 实战教程&lt;/h1&gt;&lt;p&gt;![image-20200726102546868](JWT</summary>
+    <summary type="html">&lt;h1 id=&quot;JWT-实战教程&quot;&gt;&lt;a href=&quot;#JWT-实战教程&quot; class=&quot;headerlink&quot; title=&quot;JWT 实战教程&quot;&gt;&lt;/a&gt;JWT 实战教程&lt;/h1&gt;&lt;p&gt;文档教程来自&lt;a</summary>
         
       
     
     
     
+    <category term="其他开发加点" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/categories/%E5%85%B6%E4%BB%96%E5%BC%80%E5%8F%91%E5%8A%A0%E7%82%B9/"/>
+    
+    
+    <category term="java" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/tags/java/"/>
+    
+    <category term="JWT" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/tags/JWT/"/>
     
   </entry>
   
