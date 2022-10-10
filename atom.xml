@@ -6,7 +6,7 @@
   <link href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/atom.xml" rel="self"/>
   
   <link href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/"/>
-  <updated>2022-10-08T04:17:19.104Z</updated>
+  <updated>2022-10-10T11:32:28.977Z</updated>
   <id>https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Shiro</title>
+    <link href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/10/10/shiro-shi-zhan-jiao-cheng/"/>
+    <id>https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/10/10/shiro-shi-zhan-jiao-cheng/</id>
+    <published>2022-10-10T11:15:00.000Z</published>
+    <updated>2022-10-10T11:32:28.977Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Shiro-实战教&quot;&gt;&lt;a href=&quot;#Shiro-实战教&quot; class=&quot;headerlink&quot; title=&quot;Shiro 实战教&quot;&gt;&lt;/a&gt;Shiro 实战教&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;资料 &lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="其他开发加点" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/categories/%E5%85%B6%E4%BB%96%E5%BC%80%E5%8F%91%E5%8A%A0%E7%82%B9/"/>
+    
+    
+    <category term="java" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/tags/java/"/>
+    
+    <category term="shiro" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/tags/shiro/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JWT</title>
     <link href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/10/08/jwt-shi-zhan-jiao-cheng/"/>
     <id>https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/10/08/jwt-shi-zhan-jiao-cheng/</id>
     <published>2022-10-08T04:15:00.000Z</published>
-    <updated>2022-10-08T04:17:19.104Z</updated>
+    <updated>2022-10-08T10:30:36.381Z</updated>
     
     
       
