@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Shirasawa</title>
+  
+  <subtitle>Shirasawa-zs</subtitle>
+  <link href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/"/>
+  <updated>2023-03-15T15:13:48.191Z</updated>
+  <id>https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/</id>
+  
+  <author>
+    <name>scy</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java集合回顾</title>
+    <link href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2023/03/15/java-ji-he-fu-xi-hui-gu/"/>
+    <id>https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2023/03/15/java-ji-he-fu-xi-hui-gu/</id>
+    <published>2023-03-15T01:25:00.000Z</published>
+    <updated>2023-03-15T15:13:48.191Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Collection学习前瞻&quot;&gt;&lt;a href=&quot;#Collection学习前瞻&quot; class=&quot;headerlink&quot; title=&quot;Collection学习前瞻&quot;&gt;&lt;/a&gt;Collection学习前瞻&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="后端" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+    <category term="java" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Shiro</title>
+    <link href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/10/10/shiro-shi-zhan-jiao-cheng/"/>
+    <id>https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/10/10/shiro-shi-zhan-jiao-cheng/</id>
+    <published>2022-10-10T11:15:00.000Z</published>
+    <updated>2022-10-10T13:48:26.978Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Shiro&quot;&gt;&lt;a href=&quot;#Shiro&quot; class=&quot;headerlink&quot; title=&quot;Shiro&quot;&gt;&lt;/a&gt;Shiro&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;资料 &lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="其他开发加点" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/categories/%E5%85%B6%E4%BB%96%E5%BC%80%E5%8F%91%E5%8A%A0%E7%82%B9/"/>
+    
+    
+    <category term="java" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/tags/java/"/>
+    
+    <category term="shiro" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/tags/shiro/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JWT</title>
+    <link href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/10/08/jwt-shi-zhan-jiao-cheng/"/>
+    <id>https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/10/08/jwt-shi-zhan-jiao-cheng/</id>
+    <published>2022-10-08T04:15:00.000Z</published>
+    <updated>2022-10-08T10:30:36.381Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;JWT-实战教程&quot;&gt;&lt;a href=&quot;#JWT-实战教程&quot; class=&quot;headerlink&quot; title=&quot;JWT 实战教程&quot;&gt;&lt;/a&gt;JWT 实战教程&lt;/h1&gt;&lt;p&gt;文档教程来自&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="其他开发加点" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/categories/%E5%85%B6%E4%BB%96%E5%BC%80%E5%8F%91%E5%8A%A0%E7%82%B9/"/>
+    
+    
+    <category term="java" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/tags/java/"/>
+    
+    <category term="JWT" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/tags/JWT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>注解</title>
+    <link href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/10/04/zhu-jie/"/>
+    <id>https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/10/04/zhu-jie/</id>
+    <published>2022-10-04T07:45:00.000Z</published>
+    <updated>2022-10-04T08:36:35.345Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="后端" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+    <category term="java" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SpringBoot简介1</title>
+    <link href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/09/27/spring-he-springboot-jian-jie/"/>
+    <id>https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/09/27/spring-he-springboot-jian-jie/</id>
+    <published>2022-09-27T12:25:00.000Z</published>
+    <updated>2022-09-28T13:41:27.788Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;SpringBoot和Spring简介&quot;&gt;&lt;a href=&quot;#SpringBoot和Spring简介&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="后端" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+    <category term="java" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/tags/java/"/>
+    
+    <category term="SpringBoot" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/tags/SpringBoot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>设计模式前瞻(需要掌握的)</title>
+    <link href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/09/25/java-she-ji-mo-shi/"/>
+    <id>https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/09/25/java-she-ji-mo-shi/</id>
+    <published>2022-09-25T01:25:00.000Z</published>
+    <updated>2022-10-02T13:12:34.396Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Java设计模式第一次学习&quot;&gt;&lt;a href=&quot;#Java设计模式第一次学习&quot; class=&quot;headerlink&quot; title=&quot;Java设计模式第一次学习&quot;&gt;&lt;/a&gt;Java设计模式第一次学习&lt;/h2&gt;&lt;h2 id=&quot;UML&quot;&gt;&lt;a href=&quot;#UML&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="后端" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+    <category term="java" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/tags/java/"/>
+    
+    <category term="设计模式" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>文章摘要(记录网站)</title>
+    <link href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/09/24/za-tan/"/>
+    <id>https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/09/24/za-tan/</id>
+    <published>2022-09-24T01:25:00.000Z</published>
+    <updated>2022-12-02T14:12:38.954Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Hexo一些有用的博客&quot;&gt;&lt;a href=&quot;#Hexo一些有用的博客&quot; class=&quot;headerlink&quot; title=&quot;Hexo一些有用的博客&quot;&gt;&lt;/a&gt;Hexo一些有用的博客&lt;/h1&gt;&lt;h2 id=&quot;1-hexo手把手教你布置&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="文章" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/categories/%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="杂谈" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/tags/%E6%9D%82%E8%B0%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>IOC和DI(建议回顾)</title>
+    <link href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/09/23/ioc-he-di/"/>
+    <id>https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/09/23/ioc-he-di/</id>
+    <published>2022-09-23T01:25:00.000Z</published>
+    <updated>2023-04-06T04:21:12.637Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;IOC-和-DI&quot;&gt;&lt;a href=&quot;#IOC-和-DI&quot; class=&quot;headerlink&quot; title=&quot;IOC 和 DI&quot;&gt;&lt;/a&gt;IOC 和</summary>
+        
+      
+    
+    
+    
+    <category term="后端" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+    <category term="spring" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/tags/spring/"/>
+    
+    <category term="java" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux基本指令</title>
+    <link href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/05/06/linux/"/>
+    <id>https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/05/06/linux/</id>
+    <published>2022-05-06T13:25:00.000Z</published>
+    <updated>2023-05-06T13:00:11.752Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Vim&quot;&gt;&lt;a href=&quot;#Vim&quot; class=&quot;headerlink&quot; title=&quot;Vim&quot;&gt;&lt;/a&gt;Vim&lt;/h2&gt;&lt;p&gt;Vim 文件名字(一般模式) -&amp;gt; i(进入编辑模式) -&amp;gt; esc(退出编辑模式) -&amp;gt; :(命令模式)</summary>
+        
+      
+    
+    
+    
+    <category term="文章" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/categories/%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="杂谈" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/tags/%E6%9D%82%E8%B0%88/"/>
+    
+    <category term="Linux" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaWeb02(黑马笔记版)</title>
+    <link href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/04/20/javaweb02/"/>
+    <id>https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/04/20/javaweb02/</id>
+    <published>2022-04-20T12:25:00.000Z</published>
+    <updated>2023-04-20T12:29:36.233Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1-前言&quot;&gt;&lt;a href=&quot;#1-前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="后端" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+    <category term="Java" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/tags/Java/"/>
+    
+    <category term="JavaWeb" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/tags/JavaWeb/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaWeb01(黑马笔记版)</title>
+    <link href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/04/20/javaweb01/"/>
+    <id>https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/04/20/javaweb01/</id>
+    <published>2022-04-20T11:25:00.000Z</published>
+    <updated>2023-04-20T12:29:51.115Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1-Servlet简介&quot;&gt;&lt;a href=&quot;#1-Servlet简介&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="后端" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+    <category term="Java" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/tags/Java/"/>
+    
+    <category term="JavaWeb" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/tags/JavaWeb/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>前端W3school记录</title>
+    <link href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/04/16/qian-duan-kuai-su-ru-men/"/>
+    <id>https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/04/16/qian-duan-kuai-su-ru-men/</id>
+    <published>2022-04-16T01:25:00.000Z</published>
+    <updated>2023-04-16T13:53:02.784Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;HTML5&quot;&gt;&lt;a href=&quot;#HTML5&quot; class=&quot;headerlink&quot; title=&quot;HTML5&quot;&gt;&lt;/a&gt;HTML5&lt;/h1&gt;&lt;h2 id=&quot;0-学习网站链接&quot;&gt;&lt;a href=&quot;#0-学习网站链接&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="HTML" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/tags/HTML/"/>
+    
+    <category term="CSS" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git简记</title>
+    <link href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/04/14/git/"/>
+    <id>https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/04/14/git/</id>
+    <published>2022-04-14T07:05:00.000Z</published>
+    <updated>2023-04-16T09:16:40.182Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Git&quot;&gt;&lt;a href=&quot;#Git&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="其他开发加点" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/categories/%E5%85%B6%E4%BB%96%E5%BC%80%E5%8F%91%E5%8A%A0%E7%82%B9/"/>
+    
+    
+    <category term="Git" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/tags/Git/"/>
+    
+  </entry>
+  
+</feed>
