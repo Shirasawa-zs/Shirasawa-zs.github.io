@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="SpringBoot简介1, Shirasawa">
-    <meta name="description" content="Spring和SpringBoot1">
+    <meta name="keywords" content="更灵活的配置文件, Shirasawa">
+    <meta name="description" content="配置文件实现更灵活的配置">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>SpringBoot简介1 | Shirasawa</title>
+    <title>更灵活的配置文件 | Shirasawa</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -333,12 +333,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">SpringBoot简介1</h1>
+                    <h1 class="description center-align post-title">更灵活的配置文件</h1>
                 </div>
             </div>
         </div>
@@ -376,8 +376,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%90%8E%E7%AB%AF/" class="post-category">
-                                后端
+                            <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%E5%BA%94%E7%94%A8/" class="post-category">
+                                后端开发应用
                             </a>
                         
                     </div>
@@ -389,28 +389,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-09-27
+                    2022-05-15
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-09-28
+                    2023-05-15
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.7k
+                    933
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    7 分
+                    3 分
                 </div>
                 
 
@@ -433,270 +433,79 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="SpringBoot和Spring简介"><a href="#SpringBoot和Spring简介" class="headerlink" title="SpringBoot和Spring简介"></a>SpringBoot和Spring简介</h3><p><strong>注解学习：<a target="_blank" rel="noopener" href="https://liayun.blog.csdn.net/article/details/115053350">(32条消息) 历时三个月，史上最详细的Spring注解驱动开发系列教程终于出炉了，给你全新震撼_李阿昀的博客-CSDN博客</a></strong></p>
-<p><strong>csdn虽然很垃圾，但里面还是有大佬的…,垃圾堆里刨食</strong></p>
-<h5 id="1-概述"><a href="#1-概述" class="headerlink" title="1.概述"></a>1.概述</h5><p>java网页端的开发过程如下javaweb -&gt; ssm -&gt; springboot</p>
-<p>其中ssm常规理解是spring + springMVC + Mybatis</p>
-<p>本质上来说，springMVC是spring家族的一个模块，也就是人们常说的spring framework</p>
-<p>而spring家族的集大成者springboot可以看作是spring framework的一种抽象实现</p>
-<h5 id="2-为什么要用springboot"><a href="#2-为什么要用springboot" class="headerlink" title="2.为什么要用springboot"></a>2.为什么要用springboot</h5><p>springboot的重点之一就是<strong>自动配置</strong></p>
-<p>在传统的SSM框架集成中，需要编写大量的XML配置文件，比如集成Mybatis时，需要编写mybatis_config.xml文件，在集成springmvc时，需要编写springmvc.xml文件，这些配置文件十分繁琐，还很容易出现错误，导致开发效率低。而Spring Boot采用约定大于配置的思想，将大量的spring配置文件集成到Spring Boot的内部，帮助开发人员自动配置各类XML文件，极大的简化了开发过程。<br>以上是大部分人对springboot配置的定义，实际上，我感觉，是程序员感觉配置类比xml文件好用，所以决定用配置类和注解</p>
-<h5 id="3-IOC"><a href="#3-IOC" class="headerlink" title="3.IOC"></a>3.IOC</h5><p>IOC是满足OCP原则的</p>
-<p>IOC是一种抽象的概念，java里面具体理解可以分为三个</p>
-<p>1.创建容器</p>
-<p>2.对象加入容器</p>
-<p>3.注入</p>
-<p>抽象理解的话就是老生常谈的问题</p>
-<p>控制反转</p>
-<p>作为开发者，我们只需要考虑把对象加入容器，然后注入我们所需要的对象就行了，作为设计IOC容器的人，他需要考虑的是灵活注入满足更灵活的OCP场景,这也是我们需要学习的。</p>
-<h5 id="4-应用"><a href="#4-应用" class="headerlink" title="4.应用"></a>4.应用</h5><p><strong>简单应用：就两个注解就行</strong></p>
-<p>@Component @Autowired</p>
-<p>注入容器并取出</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@Component</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Aki</span> <span class="token punctuation">&#123;</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token class-name">R</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Aki R"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-<pre class="line-numbers language-JAVA" data-language="JAVA"><code class="language-JAVA">
-@RestController
-public class TestController &#123;
-    @Autowired
-    private Aki aki;
-
-    @RequestMapping(&quot;&#x2F;&quot;)
-    public void get()&#123;
-        aki.R();
-    &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>更深入一点</p>
-<p>@Component</p>
-<p>@Controller</p>
-<p>@Service</p>
-<p>@Repository</p>
-<p>@Configuration</p>
-<p>前四个用来解决 组件&#x2F;类和忘了叫什么的new的问题，只不过所属层级不同</p>
-<h5 id="5-注入相关"><a href="#5-注入相关" class="headerlink" title="5.注入相关"></a>5.注入相关</h5><p>IOC对象的实例化，注入时机都是在容器创建就完成的，可以用@lazy延迟实例化加载，不过如果一个类里面引用了其他对象，那么作为属性的对象的延迟加载无效。</p>
-<p>@lazy一般不用，了解一下就行</p>
-<p>三种注入方式</p>
-<p>属性注入</p>
-<pre class="line-numbers language-JAVA" data-language="JAVA"><code class="language-JAVA">@Autowired
-    private Aki aki;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<p>构造器注入</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">private</span> <span class="token class-name">Aki</span> aki<span class="token punctuation">;</span>
-    
-    <span class="token annotation punctuation">@Autowired</span>
-    <span class="token keyword">public</span> <span class="token class-name">TestController</span><span class="token punctuation">(</span><span class="token class-name">Aki</span> aki<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-        <span class="token keyword">this</span><span class="token punctuation">.</span>aki <span class="token operator">=</span> aki<span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span>
-
-    <span class="token annotation punctuation">@RequestMapping</span><span class="token punctuation">(</span><span class="token string">"/"</span><span class="token punctuation">)</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-        <span class="token class-name"><span class="token namespace">aki<span class="token punctuation">.</span></span>R</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>setter注入</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">private</span> <span class="token class-name">Aki</span> aki<span class="token punctuation">;</span>
-
-   <span class="token annotation punctuation">@Autowired</span>
-   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setAki</span><span class="token punctuation">(</span><span class="token class-name">Aki</span> aki<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-       <span class="token keyword">this</span><span class="token punctuation">.</span>aki <span class="token operator">=</span> aki<span class="token punctuation">;</span>
-   <span class="token punctuation">&#125;</span>
-   <span class="token annotation punctuation">@RequestMapping</span><span class="token punctuation">(</span><span class="token string">"/"</span><span class="token punctuation">)</span>
-   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-       <span class="token class-name"><span class="token namespace">aki<span class="token punctuation">.</span></span>R</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-   <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-<p>为了代码的稳定性，我们可以引入抽象的概念</p>
-<pre class="line-numbers language-JAVA" data-language="JAVA"><code class="language-JAVA">public interface IHero &#123;
-    void R();
-&#125;
-
------------------------------------------------------
-@Component
-public class Aki implements IHero&#123;
-
-    public Aki()&#123;
-        System.out.println(&quot;Aki ... constructor&quot;);
-    &#125;
-    public void R()&#123;
-        System.out.println(&quot;Aki R&quot;);
-    &#125;
-&#125;
------------------------------------------------------
-@Component
-public class Niko implements IHero&#123;
-    public void R()&#123;
-        System.out.println(&quot;niko R&quot;);
-    &#125;
-&#125;
-------------------------------------------------------
-    @RestController
-public class TestController &#123;
-
-    @Autowired
-    private IHero aki;
-
-    @RequestMapping(&quot;&#x2F;&quot;)
-    public void get()&#123;
-        aki.R();
-    &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>满足DIP，高层的实现不依赖于底层,此时我们应该有个疑问，</p>
-<p><strong>@Autowired</strong></p>
-<p><strong>private IHero aki;</strong></p>
-<p>如何实现自动装配</p>
-<p>经过实验，可以得出以下结论</p>
-<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">//默认bytype
-IHero &lt; 1 error
-      = 1 注入默认存在的一个
-      > 1 不一定报错，先根据字段名进行匹配，没有找到就报错
-    
-//我们可以通过byname指定
-    @Autowired
-    @Qualifier(value = "字段名")<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>这时我们就该考虑更深层次的问题，如果我们新增多个类，如何减少变化带来的影响，来保持我们代码的稳定性，也为了满足ocp原则</p>
-<ul>
-<li>制造一个interface,多个类实现这个interface</li>
-</ul>
-<p>设计模式的策略模式</p>
-<ul>
-<li>一个类的属性去解决变化，用配置文件去解决，不过还是建议实现接口，哪怕只有一个类</li>
-</ul>
-<p>栗子：MySQL的连接配置文件可以在application.yaml或者application.propertis，把所有的不稳定隔离到配置文件，我们又知道配置文件满足这个</p>
-<p><strong>配置文件可以理解是外部的输入，就如同我们的用户输入意义，是一种变化，它的改变不违法OCP原则</strong>借此来解决。</p>
-<h5 id="6-Configuration"><a href="#6-Configuration" class="headerlink" title="6.@Configuration"></a>6.@Configuration</h5><p>简单的理解，@Configuration是为了解决原来IOC容器无法对属性进行赋值的问题，它的角色更像是原来xml文件的作用，在springboot2还是3引入了这一概念</p>
-<p>栗子</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@Configuration</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Hero</span> <span class="token punctuation">&#123;</span>
-
-    <span class="token annotation punctuation">@Bean</span>
-    <span class="token keyword">public</span> <span class="token class-name">IHero</span> <span class="token function">createWolf</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Wolf</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Wolf</span> <span class="token keyword">implements</span> <span class="token class-name">IHero</span><span class="token punctuation">&#123;</span>
-
-    <span class="token keyword">public</span> <span class="token class-name">Wolf</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"wolf ... constructor"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span>
-    <span class="token annotation punctuation">@Override</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token class-name">R</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"wolf R"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<pre class="line-numbers language-JAVA" data-language="JAVA"><code class="language-JAVA">@RestController
-public class TestController &#123;
-
-    @Autowired
-    private IHero Wolf;
-
-    @RequestMapping(&quot;&#x2F;&quot;)
-    public void get()&#123;
-        Wolf.R();
-    &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>通过上述操作，我们实现了在@Configuration实现了bean的注入</p>
-<p>接下来需要了解这个注解和xml，我们需要解决以下几个问题</p>
-<p><strong>我们要明白为什么需要spring的配置？</strong></p>
-<p>因为变化的出现，我们需要去隔离这些变化带给我们程序的不稳定，所以我们需要把所有的不稳定放到配置文件中，配置文件属于外部输入，也是一种变化，不影响OCP法则</p>
+                <h1 id="1-通过加载Properties-x2F-Yml实现映射"><a href="#1-通过加载Properties-x2F-Yml实现映射" class="headerlink" title="1.通过加载Properties&#x2F;Yml实现映射"></a>1.通过加载Properties&#x2F;Yml实现映射</h1><p>学习链接<a target="_blank" rel="noopener" href="https://blog.csdn.net/yusimiao/article/details/97622666?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-1-97622666-blog-104575745.235%5Ev35%5Epc_relevant_anti_vip_base&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-1-97622666-blog-104575745.235%5Ev35%5Epc_relevant_anti_vip_base&utm_relevant_index=2">(115条消息) @ConfigurationProperties 注解使用姿势，这一篇就够了_configureproperties_yusimiao的博客-CSDN博客</a></p>
+<h2 id="0-1使用介绍"><a href="#0-1使用介绍" class="headerlink" title="0.1使用介绍"></a>0.1使用介绍</h2><p>假设我们正在搭建一个发送邮件的模块。在本地测试，我们不想该模块真的发送邮件，所以我们需要一个参数来「开关」 disable 这个功能。另外，我们希望为这些邮件配置一个默认的主题，这样，当我们查看邮件收件箱，通过邮件主题可以快速判断出这是测试邮件</p>
+<p>在 application.properties 文件中创建这些参数:</p>
+<p>我们可以使用 @Value 注解或着使用 Spring Environment bean 访问这些属性，是这种注入配置方式有时显得很笨重。我们将使用更安全的方式(@ConfigurationProperties )来获取这些属性</p>
+<p><strong>意思就是我们常见的可维护性和可拓展性</strong></p>
+<p>@Value的简单介绍</p>
 <blockquote>
-<p>还有为什么隔离到配置文件</p>
+<p>该注解的作用是将我们配置文件的属性读出来，有**@Value(“${}”)<strong>和</strong>@Value(“#{}”)**两种方式</p>
 </blockquote>
-<p>1.配置文件的集中性</p>
-<p>2.业务逻辑的无关性，只需要关心配置就行</p>
-<p><strong>@Configuration是否违反了OCP</strong></p>
-<p>这个问题聚焦到@Configruation是否属于配置，这要从思想上来解决这个问题</p>
-<p><strong>是</strong>：对比其他配置文件，它虽然是以.java文件的后缀，但不否认的是他仍然是一个配置文件，配置文件的定义不应该以后缀为鉴别条件</p>
-<p><strong>否</strong>：相较于其他配置文件的简洁性，类似于SpringBoot的application,@Confiruation好像太过繁琐</p>
-<blockquote>
-<p>实现自动配置(有缺陷）</p>
-</blockquote>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">IConnect</span> <span class="token punctuation">&#123;</span>
-        <span class="token keyword">void</span> <span class="token function">connect</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>① ${ property : default_value }<br>② #{ obj.property? :default_value }<br>第一个注入的是外部配置文件对应的property</p>
+<p>第二个则是SpEL表达式对应的内容。 那个<br>default_value，就是前面的值为空时的默认值。注意二者的不同，#{}里面那个obj代表对象</p>
+<h2 id="0-2注意事项"><a href="#0-2注意事项" class="headerlink" title="0.2注意事项"></a>0.2注意事项</h2><p>@ConfigurationProperties 的基本用法非常简单:我们为每个要捕获的外部属性提供一个带有字段的类。请注意以下几点:</p>
+<ul>
+<li><p>前缀定义了哪些外部属性将绑定到类的字段上（就是类似yml的第一个字符或者properties的第一个字符）</p>
+</li>
+<li><p>根据 Spring Boot 宽松的绑定规则，类的属性名称必须与外部属性的名称匹配（配置文件的除前缀名和字段对应）</p>
+</li>
+<li><p>我们可以简单地用一个值初始化一个字段来定义一个默认值</p>
+</li>
+<li><p>类本身可以是包私有的</p>
+</li>
+<li><p>类的字段必须有公共 setter 方法</p>
+</li>
+</ul>
+<h2 id="0-3激活配置类"><a href="#0-3激活配置类" class="headerlink" title="0.3激活配置类"></a>0.3激活配置类</h2><p>对于 Spring Boot，创建一个 MainProperties 类型的 bean，我们可以通过下面几种方式将其添加到应用上下文中</p>
+<p>首先，我们可以通过添加 @Component 注解让 Component Scan 扫描到</p>
+<p>很显然，只有当类所在的包被 Spring @ComponentScan 注解扫描到才会生效，默认情况下，该注解会扫描在主应用类下的所有包结构</p>
+<p>我们也可以通过 Spring 的 Java Configuration 特性实现同样的效果:</p>
+<p>只要 MailModuleConfiguration 类被 Spring Boot 应用扫描到，我们就可以在应用上下文中访问 MainProperties bean</p>
+<p>我们还可以使用 @EnableConfigurationProperties 注解让我们的类被 Spring Boot 所知道，在该注解中其实是用了@Import(EnableConfigurationPropertiesImportSelector.class) 实现，大家可以看一下</p>
+<h2 id="1-1配置codeMessage-properties"><a href="#1-1配置codeMessage-properties" class="headerlink" title="1.1配置codeMessage.properties"></a>1.1配置codeMessage.properties</h2><pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"># 消息码配置文件
+# 格式：消息码 -> 消息
+lin.code-message[0]=成功
+lin.code-message[1]=创建成功
+lin.code-message[2]=更新成功
+lin.code-message[3]=删除成功
+lin.code-message[4]=密码修改成功
+lin.code-message[5]=删除用户成功
+lin.code-message[6]=更新用户成功
+lin.code-message[7]=更新分组成功
+lin.code-message[8]=删除分组成功
+lin.code-message[9]=添加权限成功
+lin.code-message[10]=删除权限成功
+lin.code-message[11]=注册成功<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<pre class="line-numbers language-JAVA" data-language="JAVA"><code class="language-JAVA">public class Mysql implements IConnect&#123;
+<h2 id="1-2配置映射"><a href="#1-2配置映射" class="headerlink" title="1.2配置映射"></a>1.2配置映射</h2><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@Component</span>
+<span class="token annotation punctuation">@ConfigurationProperties</span><span class="token punctuation">(</span>prefix <span class="token operator">=</span> <span class="token string">"lin"</span><span class="token punctuation">)</span>
+<span class="token annotation punctuation">@PropertySource</span><span class="token punctuation">(</span>value <span class="token operator">=</span> <span class="token string">"classpath:code-message.properties"</span><span class="token punctuation">,</span> encoding <span class="token operator">=</span> <span class="token string">"UTF-8"</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ExceptionCodeConfiguration</span> <span class="token punctuation">&#123;</span>
 
+    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token class-name">Map</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Integer</span><span class="token punctuation">,</span> <span class="token class-name">String</span><span class="token punctuation">></span></span> codeMessage <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashMap</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">></span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    private String ip &#x3D; &quot;192.168.0.1&quot;;
+    <span class="token comment">//拿到数据，数组对应</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token class-name">String</span> <span class="token function">getMessage</span><span class="token punctuation">(</span><span class="token class-name">Integer</span> code<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token keyword">return</span> codeMessage<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>code<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
 
+    <span class="token comment">//返回map</span>
+    <span class="token keyword">public</span> <span class="token class-name">Map</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Integer</span><span class="token punctuation">,</span> <span class="token class-name">String</span><span class="token punctuation">></span></span> <span class="token function">getCodeMessage</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token keyword">return</span> codeMessage<span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
 
-    private String root &#x3D; &quot;999&quot;;
-
-    public Mysql() &#123;
-
-    &#125;
-
-    public void connect()&#123;
-        System.out.println(this.ip + &quot;   &quot; + this.root);
-    &#125;
-
-    public Mysql(String ip, String root) &#123;
-        this.ip &#x3D; ip;
-        this.root &#x3D; root;
-    &#125;
-
-    @Override
-    public String toString() &#123;
-        return &quot;Mysql&#123;&quot; +
-                &quot;ip&#x3D;&#39;&quot; + ip + &#39;\&#39;&#39; +
-                &quot;, root&#x3D;&#39;&quot; + root + &#39;\&#39;&#39; +
-                &#39;&#125;&#39;;
-    &#125;
-
-    public String getIp() &#123;
-        return ip;
-    &#125;
-
-    public void setIp(String ip) &#123;
-        this.ip &#x3D; ip;
-    &#125;
-
-    public String getRoot() &#123;
-        return root;
-    &#125;
-
-    public void setRoot(String root) &#123;
-        this.root &#x3D; root;
-    &#125;
-&#125;
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@Configuration</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Connect</span> <span class="token punctuation">&#123;</span>
-
-    <span class="token annotation punctuation">@Value</span><span class="token punctuation">(</span><span class="token string">"$&#123;mysql.ip&#125;"</span><span class="token punctuation">)</span>
-    <span class="token keyword">private</span> <span class="token class-name">String</span> ip<span class="token punctuation">;</span>
-
-    <span class="token annotation punctuation">@Value</span><span class="token punctuation">(</span><span class="token string">"$&#123;mysql.port&#125;"</span><span class="token punctuation">)</span>
-    <span class="token keyword">private</span> <span class="token class-name">String</span> root<span class="token punctuation">;</span>
-
-    <span class="token annotation punctuation">@Bean</span>
-    <span class="token keyword">public</span> <span class="token class-name">IConnect</span> <span class="token function">mysql</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Mysql</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>ip<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>root<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">//设置一对</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setCodeMessage</span><span class="token punctuation">(</span><span class="token class-name">Map</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Integer</span><span class="token punctuation">,</span> <span class="token class-name">String</span><span class="token punctuation">></span></span> codeMessage<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token class-name">ExceptionCodeConfiguration</span><span class="token punctuation">.</span>codeMessage <span class="token operator">=</span> codeMessage<span class="token punctuation">;</span>
     <span class="token punctuation">&#125;</span>
 <span class="token punctuation">&#125;</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<pre class="line-numbers language-JAVA" data-language="JAVA"><code class="language-JAVA">mysql.ip&#x3D;192.102.2.3
-mysql.port&#x3D;9999<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h2 id="1-3使用"><a href="#1-3使用" class="headerlink" title="1.3使用"></a>1.3使用</h2><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">String</span> errorMessage <span class="token operator">=</span> <span class="token class-name">ExceptionCodeConfiguration</span><span class="token punctuation">.</span><span class="token function">getMessage</span><span class="token punctuation">(</span>code<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p><img src="https://cdn.jsdelivr.net/gh/Shirasawa-zs/BlogImage@main/img/20220927232106.png"></p>
+
+
 
                 
             </div>
@@ -723,7 +532,7 @@ mysql.port&#x3D;9999<span aria-hidden="true" class="line-numbers-rows"><span></s
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/09/27/spring-he-springboot-jian-jie/">https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/09/27/spring-he-springboot-jian-jie/</a>
+                    <a href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/05/15/pei-zhi-wen-jian-de-jia-zai/">https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/05/15/pei-zhi-wen-jian-de-jia-zai/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -849,24 +658,24 @@ mysql.port&#x3D;9999<span aria-hidden="true" class="line-numbers-rows"><span></s
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/10/04/zhu-jie/">
+                <a href="/2022/09/23/ioc-he-di/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="注解">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="IOC和DI(建议回顾)">
                         
-                        <span class="card-title">注解</span>
+                        <span class="card-title">IOC和DI(建议回顾)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            java注解
+                            Spring的IOC和DI
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-10-04
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-09-23
                         </span>
                         <span class="publish-author">
                             
@@ -882,6 +691,10 @@ mysql.port&#x3D;9999<span aria-hidden="true" class="line-numbers-rows"><span></s
                 </div>
                 
                 <div class="card-action article-tags">
+                    
+                    <a href="/tags/spring/">
+                        <span class="chip bg-color">spring</span>
+                    </a>
                     
                     <a href="/tags/java/">
                         <span class="chip bg-color">java</span>
@@ -898,31 +711,31 @@ mysql.port&#x3D;9999<span aria-hidden="true" class="line-numbers-rows"><span></s
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/09/25/java-she-ji-mo-shi/">
+                <a href="/2022/05/11/deng-lu-xiao-yan-liu-cheng/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="设计模式前瞻(需要掌握的)">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="登录校验流程">
                         
-                        <span class="card-title">设计模式前瞻(需要掌握的)</span>
+                        <span class="card-title">登录校验流程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            设计模式前瞻
+                            登录校验流程
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-25
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-11
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%90%8E%E7%AB%AF/" class="post-category">
-                                    后端
+                            <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%E5%BA%94%E7%94%A8/" class="post-category">
+                                    后端开发应用
                                 </a>
                             
                             
@@ -936,8 +749,8 @@ mysql.port&#x3D;9999<span aria-hidden="true" class="line-numbers-rows"><span></s
                         <span class="chip bg-color">java</span>
                     </a>
                     
-                    <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
-                        <span class="chip bg-color">设计模式</span>
+                    <a href="/tags/SpringBoot/">
+                        <span class="chip bg-color">SpringBoot</span>
                     </a>
                     
                 </div>

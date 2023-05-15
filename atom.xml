@@ -336,11 +336,38 @@
   </entry>
   
   <entry>
-    <title>ThreadLocal</title>
+    <title>更灵活的配置文件</title>
+    <link href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/05/15/pei-zhi-wen-jian-de-jia-zai/"/>
+    <id>https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/05/15/pei-zhi-wen-jian-de-jia-zai/</id>
+    <published>2022-05-15T09:14:00.000Z</published>
+    <updated>2023-05-15T09:14:16.414Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1-通过加载Properties-x2F-Yml实现映射&quot;&gt;&lt;a href=&quot;#1-通过加载Properties-x2F-Yml实现映射&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="后端开发应用" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%E5%BA%94%E7%94%A8/"/>
+    
+    
+    <category term="java" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/tags/java/"/>
+    
+    <category term="SpringBoot" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/tags/SpringBoot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>登录校验流程</title>
     <link href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/05/11/deng-lu-xiao-yan-liu-cheng/"/>
     <id>https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/05/11/deng-lu-xiao-yan-liu-cheng/</id>
     <published>2022-05-11T05:09:00.000Z</published>
-    <updated>2023-05-11T05:12:08.494Z</updated>
+    <updated>2023-05-11T11:13:09.793Z</updated>
     
     
       
