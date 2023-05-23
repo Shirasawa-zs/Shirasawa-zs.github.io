@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="更灵活的配置文件, Shirasawa">
-    <meta name="description" content="配置文件实现更灵活的配置">
+    <meta name="keywords" content="异常处理和响应拦截, Shirasawa">
+    <meta name="description" content="异常处理和相应拦截">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>更灵活的配置文件 | Shirasawa</title>
+    <title>异常处理和响应拦截 | Shirasawa</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -333,12 +333,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">更灵活的配置文件</h1>
+                    <h1 class="description center-align post-title">异常处理和响应拦截</h1>
                 </div>
             </div>
         </div>
@@ -389,28 +389,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-05-15
+                    2023-05-23
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-05-15
+                    2023-05-23
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    933
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    6 分
                 </div>
                 
 
@@ -433,78 +433,304 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="1-通过加载Properties-x2F-Yml实现映射"><a href="#1-通过加载Properties-x2F-Yml实现映射" class="headerlink" title="1.通过加载Properties&#x2F;Yml实现映射"></a>1.通过加载Properties&#x2F;Yml实现映射</h1><p>学习链接<a target="_blank" rel="noopener" href="https://blog.csdn.net/yusimiao/article/details/97622666?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-1-97622666-blog-104575745.235%5Ev35%5Epc_relevant_anti_vip_base&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-1-97622666-blog-104575745.235%5Ev35%5Epc_relevant_anti_vip_base&utm_relevant_index=2">(115条消息) @ConfigurationProperties 注解使用姿势，这一篇就够了_configureproperties_yusimiao的博客-CSDN博客</a></p>
-<h2 id="0-1使用介绍"><a href="#0-1使用介绍" class="headerlink" title="0.1使用介绍"></a>0.1使用介绍</h2><p>假设我们正在搭建一个发送邮件的模块。在本地测试，我们不想该模块真的发送邮件，所以我们需要一个参数来「开关」 disable 这个功能。另外，我们希望为这些邮件配置一个默认的主题，这样，当我们查看邮件收件箱，通过邮件主题可以快速判断出这是测试邮件</p>
-<p>在 application.properties 文件中创建这些参数:</p>
-<p>我们可以使用 @Value 注解或着使用 Spring Environment bean 访问这些属性，是这种注入配置方式有时显得很笨重。我们将使用更安全的方式(@ConfigurationProperties )来获取这些属性</p>
-<p><strong>意思就是我们常见的可维护性和可拓展性</strong></p>
-<p>@Value的简单介绍</p>
-<blockquote>
-<p>该注解的作用是将我们配置文件的属性读出来，有**@Value(“${}”)<strong>和</strong>@Value(“#{}”)**两种方式</p>
-</blockquote>
-<p>① ${ property : default_value }<br>② #{ obj.property? :default_value }<br>第一个注入的是外部配置文件对应的property</p>
-<p>第二个则是SpEL表达式对应的内容。 那个<br>default_value，就是前面的值为空时的默认值。注意二者的不同，#{}里面那个obj代表对象</p>
-<h2 id="0-2注意事项"><a href="#0-2注意事项" class="headerlink" title="0.2注意事项"></a>0.2注意事项</h2><p>@ConfigurationProperties 的基本用法非常简单:我们为每个要捕获的外部属性提供一个带有字段的类。请注意以下几点:</p>
-<ul>
-<li><p>前缀定义了哪些外部属性将绑定到类的字段上（就是类似yml的第一个字符或者properties的第一个字符）</p>
-</li>
-<li><p>根据 Spring Boot 宽松的绑定规则，类的属性名称必须与外部属性的名称匹配（配置文件的除前缀名和字段对应）</p>
-</li>
-<li><p>我们可以简单地用一个值初始化一个字段来定义一个默认值</p>
-</li>
-<li><p>类本身可以是包私有的</p>
-</li>
-<li><p>类的字段必须有公共 setter 方法</p>
-</li>
-</ul>
-<h2 id="0-3激活配置类"><a href="#0-3激活配置类" class="headerlink" title="0.3激活配置类"></a>0.3激活配置类</h2><p>对于 Spring Boot，创建一个 MainProperties 类型的 bean，我们可以通过下面几种方式将其添加到应用上下文中</p>
-<p>首先，我们可以通过添加 @Component 注解让 Component Scan 扫描到</p>
-<p>很显然，只有当类所在的包被 Spring @ComponentScan 注解扫描到才会生效，默认情况下，该注解会扫描在主应用类下的所有包结构</p>
-<p>我们也可以通过 Spring 的 Java Configuration 特性实现同样的效果:</p>
-<p>只要 MailModuleConfiguration 类被 Spring Boot 应用扫描到，我们就可以在应用上下文中访问 MainProperties bean</p>
-<p>我们还可以使用 @EnableConfigurationProperties 注解让我们的类被 Spring Boot 所知道，在该注解中其实是用了@Import(EnableConfigurationPropertiesImportSelector.class) 实现，大家可以看一下</p>
-<h2 id="1-1配置codeMessage-properties"><a href="#1-1配置codeMessage-properties" class="headerlink" title="1.1配置codeMessage.properties"></a>1.1配置codeMessage.properties</h2><pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"># 消息码配置文件
-# 格式：消息码 -> 消息
-lin.code-message[0]=成功
-lin.code-message[1]=创建成功
-lin.code-message[2]=更新成功
-lin.code-message[3]=删除成功
-lin.code-message[4]=密码修改成功
-lin.code-message[5]=删除用户成功
-lin.code-message[6]=更新用户成功
-lin.code-message[7]=更新分组成功
-lin.code-message[8]=删除分组成功
-lin.code-message[9]=添加权限成功
-lin.code-message[10]=删除权限成功
-lin.code-message[11]=注册成功<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                <h1 id="1-前言"><a href="#1-前言" class="headerlink" title="1.前言"></a>1.前言</h1><p>这篇文章主要应该是代码的总结，过一个思路，总结一个相对完整的异常处理和响应拦截</p>
+<h1 id="2-异常处理"><a href="#2-异常处理" class="headerlink" title="2.异常处理"></a>2.异常处理</h1><h2 id="2-1定义全局异常并封装"><a href="#2-1定义全局异常并封装" class="headerlink" title="2.1定义全局异常并封装"></a>2.1定义全局异常并封装</h2><p>1.自定义常量</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span>  <span class="token keyword">class</span> <span class="token class-name">GlobalConstant</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">long</span> <span class="token constant">HTTP_ERROR_CODE</span> <span class="token operator">=</span> <span class="token number">500</span><span class="token punctuation">;</span>
+    
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">String</span> <span class="token constant">HTTP_ERROR_MESSAGE</span> <span class="token operator">=</span> <span class="token string">"服务器内部错误"</span><span class="token punctuation">;</span>
+    
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">String</span> <span class="token class-name">Constraint_Violation_Exception_MESSAGE</span> <span class="token operator">=</span> <span class="token string">"参数校验错误"</span><span class="token punctuation">;</span>
+    
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">String</span> <span class="token constant">ERROR_CODE</span> <span class="token operator">=</span> <span class="token string">"-1"</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="1-2配置映射"><a href="#1-2配置映射" class="headerlink" title="1.2配置映射"></a>1.2配置映射</h2><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@Component</span>
-<span class="token annotation punctuation">@ConfigurationProperties</span><span class="token punctuation">(</span>prefix <span class="token operator">=</span> <span class="token string">"lin"</span><span class="token punctuation">)</span>
-<span class="token annotation punctuation">@PropertySource</span><span class="token punctuation">(</span>value <span class="token operator">=</span> <span class="token string">"classpath:code-message.properties"</span><span class="token punctuation">,</span> encoding <span class="token operator">=</span> <span class="token string">"UTF-8"</span><span class="token punctuation">)</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ExceptionCodeConfiguration</span> <span class="token punctuation">&#123;</span>
+<p>2.实现</p>
+<pre class="line-numbers language-JAVA" data-language="JAVA"><code class="language-JAVA">@Getter
+public class HttpException extends RuntimeException &#123;
+    public long errCode;
+    public String message;
+    
+    public HttpException() &#123;
+        this.errCode &#x3D; GlobalConstant.HTTP_ERROR_CODE;
+        this.message &#x3D; GlobalConstant.HTTP_ERROR_MESSAGE;
+    &#125;
+    
+    public HttpException(long errCode, String message) &#123;
+        this.errCode &#x3D; errCode;
+        this.message &#x3D; message;
+    &#125;
+&#125;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token class-name">Map</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Integer</span><span class="token punctuation">,</span> <span class="token class-name">String</span><span class="token punctuation">></span></span> codeMessage <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashMap</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">></span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<h2 id="2-1自定义业务异常"><a href="#2-1自定义业务异常" class="headerlink" title="2.1自定义业务异常"></a>2.1自定义业务异常</h2><p>1.定义接口，包含错误码和错误信息</p>
+<pre class="line-numbers language-JAVA" data-language="JAVA"><code class="language-JAVA">public interface BaseErrorInfoInterface &#123;
+    String getResultCode();
 
-    <span class="token comment">//拿到数据，数组对应</span>
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token class-name">String</span> <span class="token function">getMessage</span><span class="token punctuation">(</span><span class="token class-name">Integer</span> code<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-        <span class="token keyword">return</span> codeMessage<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>code<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span>
+    String getResultMsg();
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-    <span class="token comment">//返回map</span>
-    <span class="token keyword">public</span> <span class="token class-name">Map</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Integer</span><span class="token punctuation">,</span> <span class="token class-name">String</span><span class="token punctuation">></span></span> <span class="token function">getCodeMessage</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-        <span class="token keyword">return</span> codeMessage<span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span>
+<p>2.自定义业务常量枚举类2</p>
+<pre class="line-numbers language-JAVA" data-language="JAVA"><code class="language-JAVA">public enum BizExceptionEnum implements BaseErrorInfoInterface &#123;
 
-    <span class="token comment">//设置一对</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setCodeMessage</span><span class="token punctuation">(</span><span class="token class-name">Map</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Integer</span><span class="token punctuation">,</span> <span class="token class-name">String</span><span class="token punctuation">></span></span> codeMessage<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-        <span class="token class-name">ExceptionCodeConfiguration</span><span class="token punctuation">.</span>codeMessage <span class="token operator">=</span> codeMessage<span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    USER_ALREADY_EXIST(&quot;1000&quot;, &quot;用户已存在&quot;);
+    private final String resultCode;
 
-<h2 id="1-3使用"><a href="#1-3使用" class="headerlink" title="1.3使用"></a>1.3使用</h2><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">String</span> errorMessage <span class="token operator">=</span> <span class="token class-name">ExceptionCodeConfiguration</span><span class="token punctuation">.</span><span class="token function">getMessage</span><span class="token punctuation">(</span>code<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+    private final String resultMsg;
+
+    BizExceptionEnum(String resultCode, String resultMsg) &#123;
+        this.resultCode &#x3D; resultCode;
+        this.resultMsg &#x3D; resultMsg;
+    &#125;
+
+    @Override
+    public String getResultCode() &#123;
+        return resultCode;
+    &#125;
+
+    @Override
+    public String getResultMsg() &#123;
+        return resultMsg;
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>3.实现自定义业务对象异常</p>
+<pre class="line-numbers language-JAVA" data-language="JAVA"><code class="language-JAVA">@Setter
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
+public class BizException extends RuntimeException&#123;
+    protected String errorCode;
+    protected String errorMsg;
+
+    public BizException(BaseErrorInfoInterface errorInfoInterface) &#123;
+        super(errorInfoInterface.getResultCode());
+        this.errorCode &#x3D; errorInfoInterface.getResultCode();
+        this.errorMsg &#x3D; errorInfoInterface.getResultMsg();
+    &#125;
+
+    public BizException(BaseErrorInfoInterface errorInfoInterface, Throwable cause) &#123;
+        super(errorInfoInterface.getResultCode(), cause);
+        this.errorCode &#x3D; errorInfoInterface.getResultCode();
+        this.errorMsg &#x3D; errorInfoInterface.getResultMsg();
+    &#125;
+
+    public BizException(String errorMsg) &#123;
+        super(errorMsg);
+        this.errorMsg &#x3D; errorMsg;
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="2-3实现全局异常处理类"><a href="#2-3实现全局异常处理类" class="headerlink" title="2.3实现全局异常处理类"></a>2.3实现全局异常处理类</h2><pre class="line-numbers language-JAVA" data-language="JAVA"><code class="language-JAVA">@RestControllerAdvice
+@Slf4j
+public class GlobalExceptionHandler &#123;
+
+    @ExceptionHandler(value &#x3D; BizException.class)
+    public UnifiedResponse bizExceptionHandler(HttpServletRequest req, BizException e) &#123;
+        log.error(&quot;发生业务异常！原因是：&#123;&#125;&quot;, e.getErrorMsg());
+        return UnifiedResponse.error(e.getErrorCode(), e.getErrorMsg());
+    &#125;
+
+    @ExceptionHandler(value &#x3D; Exception.class)
+    public UnifiedResponse exceptionHandler(HttpServletRequest req, Exception e) &#123;
+        log.error(&quot;未知异常！原因是:&quot;, e);
+        return UnifiedResponse.error(String.valueOf(HttpStatus.INTERNAL_SERVER_ERROR.value()), HttpStatus.INTERNAL_SERVER_ERROR.getReasonPhrase());
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="2-4具体业务逻辑的处理"><a href="#2-4具体业务逻辑的处理" class="headerlink" title="2.4具体业务逻辑的处理"></a>2.4具体业务逻辑的处理</h2><h3 id="2-4-1封装具体异常信息"><a href="#2-4-1封装具体异常信息" class="headerlink" title="2.4.1封装具体异常信息"></a>2.4.1封装具体异常信息</h3><pre class="line-numbers language-JAVA" data-language="JAVA"><code class="language-JAVA">public class AccountConstant &#123;
+    public static final String NICK_NAME_EXIST_MESSAGE &#x3D; &quot;用户名已被使用&quot;;
+    public static final String PHONE_EXIST_MESSAGE &#x3D; &quot;手机号已被使用&quot;;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="2-4-2封装对应具体业务的异常对象"><a href="#2-4-2封装对应具体业务的异常对象" class="headerlink" title="2.4.2封装对应具体业务的异常对象"></a>2.4.2封装对应具体业务的异常对象</h3><pre class="line-numbers language-JAVA" data-language="JAVA"><code class="language-JAVA">public class UserAlreadyExistException extends BizException &#123;
+    public UserAlreadyExistException() &#123;
+        super(BizExceptionEnum.USER_ALREADY_EXIST);
+    &#125;
+
+    public UserAlreadyExistException(String errMsg) &#123;
+        this();
+        this.errorMsg &#x3D; errMsg;
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
+
+<h3 id="2-4-3封装数据字段对象和业务处理的domain"><a href="#2-4-3封装数据字段对象和业务处理的domain" class="headerlink" title="2.4.3封装数据字段对象和业务处理的domain"></a>2.4.3封装数据字段对象和业务处理的domain</h3><pre class="line-numbers language-JAVA" data-language="JAVA"><code class="language-JAVA">@EqualsAndHashCode(callSuper &#x3D; true)
+@Entity.Table(&quot;user&quot;)
+@Builder
+@Data
+public class User extends AuditEntity &#123;
+    @Entity.Column(id &#x3D; true)
+    private String id;
+
+    @Entity.Column(&quot;nick_name&quot;)
+    private String nickName;
+
+    @Entity.Column(&quot;email&quot;)
+    private String email;
+    
+    @Entity.Column(&quot;phone&quot;)
+    private String phone;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-JAVA" data-language="JAVA"><code class="language-JAVA">public record RegisterDto(
+        String nickName,
+        String phone
+) &#123;
+    public RegisterDto &#123;
+        Objects.requireNonNull(nickName);
+        Objects.requireNonNull(phone);
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="2-4-4Controller层处理请求"><a href="#2-4-4Controller层处理请求" class="headerlink" title="2.4.4Controller层处理请求"></a>2.4.4Controller层处理请求</h3><pre class="line-numbers language-JAVA" data-language="JAVA"><code class="language-JAVA">@RestController
+@RequestMapping(&quot;&#x2F;account&quot;)
+@Tag(name &#x3D; &quot;账号管理&quot;)
+public class AccountController &#123;
+    private final AccountService accountService;
+    public AccountController(AccountService accountService) &#123;
+        this.accountService &#x3D; accountService;
+    &#125;
+    
+    @PostMapping(&quot;&#x2F;register&quot;)
+    @Operation(summary &#x3D; &quot;注册&quot;)
+    public String register(@RequestBody RegisterDto register) &#123;
+        this.accountService.register(register);
+        return &quot;注册成功&quot;;
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="2-4-5Service处理逻辑"><a href="#2-4-5Service处理逻辑" class="headerlink" title="2.4.5Service处理逻辑"></a>2.4.5Service处理逻辑</h3><pre class="line-numbers language-JAVA" data-language="JAVA"><code class="language-JAVA">@Service
+public class AccountService
+        extends AbstractService&lt;User, String, UserMapper&gt;
+        implements IAccountService &#123;
+    private void registerCheck(RegisterDto register) &#123;
+        &#x2F;&#x2F;用户昵称不重复，用户手机号不重复
+        User byNickName &#x3D; User.builder().nickName(register.nickName()).build();
+        if(this.findOne(byNickName) !&#x3D; null) &#123;
+            throw new UserAlreadyExistException(AccountConstant.NICK_NAME_EXIST_MESSAGE);
+        &#125;
+        User byPhone &#x3D; User.builder().phone(register.phone()).build();
+        if(this.findOne(byPhone) !&#x3D; null) &#123;
+            throw new UserAlreadyExistException(AccountConstant.PHONE_EXIST_MESSAGE);
+        &#125;
+    &#125;
+
+    @Override
+    public void register(RegisterDto register) &#123;
+        this.registerCheck(register);
+
+        User user &#x3D; User.builder()
+                .id(UUID.fastUUID().toString())
+                .nickName(register.nickName())
+                .phone(register.phone())
+                .build();
+        this.save(user);
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h1 id="3-处理全局返回"><a href="#3-处理全局返回" class="headerlink" title="3.处理全局返回"></a>3.处理全局返回</h1><h2 id="3-1定义不需要返回体的注解"><a href="#3-1定义不需要返回体的注解" class="headerlink" title="3.1定义不需要返回体的注解"></a>3.1定义不需要返回体的注解</h2><pre class="line-numbers language-JAVA" data-language="JAVA"><code class="language-JAVA">@Target(&#123;ElementType.TYPE, ElementType.METHOD&#125;)
+@Retention(RetentionPolicy.RUNTIME)
+public @interface IgnoreResponseAdvice &#123;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h2 id="3-2定义返回对象"><a href="#3-2定义返回对象" class="headerlink" title="3.2定义返回对象"></a>3.2定义返回对象</h2><p>通常也就三个信息code, message, data</p>
+<pre class="line-numbers language-JAVA" data-language="JAVA"><code class="language-JAVA">@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class UnifiedResponse &#123;
+    private String code;
+
+    private String message;
+
+    private Object data;
+
+    public UnifiedResponse(BaseErrorInfoInterface errorInfo) &#123;
+        this.code &#x3D; errorInfo.getResultCode();
+        this.message &#x3D; errorInfo.getResultMsg();
+    &#125;
+
+    public static UnifiedResponse success() &#123;
+        return success(null);
+    &#125;
+
+    public static UnifiedResponse success(Object data) &#123;
+        return UnifiedResponse.builder()
+                .code(String.valueOf(HttpStatus.OK.value()))
+                .message(HttpStatus.OK.getReasonPhrase())
+                .data(data).build();
+    &#125;
+    
+    public static UnifiedResponse success(String msg) &#123;
+        return UnifiedResponse.builder()
+                .code(String.valueOf(HttpStatus.OK.value()))
+                .message(msg)
+                .build();
+    &#125;
+
+    public static UnifiedResponse error(BaseErrorInfoInterface errorInfo) &#123;
+        return UnifiedResponse.builder()
+                .code(errorInfo.getResultCode())
+                .message(errorInfo.getResultMsg())
+                .build();
+    &#125;
+
+    public static UnifiedResponse error(String code, String message) &#123;
+        return UnifiedResponse.builder()
+                .code(code)
+                .message(message)
+                .build();
+    &#125;
+
+    public static UnifiedResponse error(String message) &#123;
+        return UnifiedResponse.builder()
+                .code(GlobalConstant.ERROR_CODE)
+                .message(message)
+                .build();
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="3-3利用反射和注解实现全局的返回"><a href="#3-3利用反射和注解实现全局的返回" class="headerlink" title="3.3利用反射和注解实现全局的返回"></a>3.3利用反射和注解实现全局的返回</h2><pre class="line-numbers language-JAVA" data-language="JAVA"><code class="language-JAVA">@RestControllerAdvice(value &#x3D; &quot;com.horaoen.protpets.domain&quot;)
+public class ResponseAdvice implements ResponseBodyAdvice&lt;Object&gt; &#123;
+    
+    @Override
+    public boolean supports(MethodParameter methodParameter,
+                            Class&lt;? extends HttpMessageConverter&lt;?&gt;&gt; aClass) &#123;
+        if (methodParameter.getDeclaringClass()
+                .isAnnotationPresent(IgnoreResponseAdvice.class)) &#123;
+            return false;
+        &#125;
+        if(methodParameter.getMethod() !&#x3D; null) &#123;
+            return !methodParameter.getMethod().isAnnotationPresent(IgnoreResponseAdvice.class);
+        &#125; 
+        return true;
+    &#125;
+
+    @Override
+    public Object beforeBodyWrite(Object o, MethodParameter methodParameter,
+                                  MediaType mediaType,
+                                  Class&lt;? extends HttpMessageConverter&lt;?&gt;&gt; aClass,
+                                  ServerHttpRequest serverHttpRequest,
+                                  ServerHttpResponse serverHttpResponse) &#123;
+        if (null &#x3D;&#x3D; o) &#123;
+            return UnifiedResponse.success();
+        &#125; else if (o instanceof UnifiedResponse) &#123;
+            return (UnifiedResponse) o;
+        &#125; else if(o instanceof String)&#123;
+            &#x2F;&#x2F;o是message
+            return UnifiedResponse.success(o.toString());
+        &#125; else &#123;
+            &#x2F;&#x2F; o是data
+            return UnifiedResponse.success(o);
+        &#125;
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
                 
@@ -532,7 +758,7 @@ lin.code-message[11]=注册成功<span aria-hidden="true" class="line-numbers-ro
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/05/15/pei-zhi-wen-jian-de-jia-zai/">https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2022/05/15/pei-zhi-wen-jian-de-jia-zai/</a>
+                    <a href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2023/05/23/yi-chang-chu-li-he-xiang-ying-lan-jie/">https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2023/05/23/yi-chang-chu-li-he-xiang-ying-lan-jie/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -654,29 +880,84 @@ lin.code-message[11]=注册成功<span aria-hidden="true" class="line-numbers-ro
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/09/23/ioc-he-di/">
+                <a href="/2023/05/23/yi-chang-chu-li-he-xiang-ying-lan-jie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="IOC和DI(建议回顾)">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="异常处理和响应拦截">
                         
-                        <span class="card-title">IOC和DI(建议回顾)</span>
+                        <span class="card-title">异常处理和响应拦截</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Spring的IOC和DI
+                            异常处理和相应拦截
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-09-23
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-05-23
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%E5%BA%94%E7%94%A8/" class="post-category">
+                                    后端开发应用
+                                </a>
+                            
+                            
                         </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/java/">
+                        <span class="chip bg-color">java</span>
+                    </a>
+                    
+                    <a href="/tags/SpringBoot/">
+                        <span class="chip bg-color">SpringBoot</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/05/23/lamda-biao-da-shi-he-stream-liu/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Lamda表达式和Stream流">
+                        
+                        <span class="card-title">Lamda表达式和Stream流</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Lamda表达式和Stream流
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-05-23
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -692,65 +973,8 @@ lin.code-message[11]=注册成功<span aria-hidden="true" class="line-numbers-ro
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/spring/">
-                        <span class="chip bg-color">spring</span>
-                    </a>
-                    
                     <a href="/tags/java/">
                         <span class="chip bg-color">java</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/05/11/deng-lu-xiao-yan-liu-cheng/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="登录校验流程">
-                        
-                        <span class="card-title">登录校验流程</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            登录校验流程
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-11
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%E5%BA%94%E7%94%A8/" class="post-category">
-                                    后端开发应用
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/java/">
-                        <span class="chip bg-color">java</span>
-                    </a>
-                    
-                    <a href="/tags/SpringBoot/">
-                        <span class="chip bg-color">SpringBoot</span>
                     </a>
                     
                 </div>

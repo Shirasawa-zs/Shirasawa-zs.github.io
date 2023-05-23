@@ -6,7 +6,7 @@
   <link href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/atom.xml" rel="self"/>
   
   <link href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/"/>
-  <updated>2023-05-23T09:42:57.015Z</updated>
+  <updated>2023-05-23T15:35:53.131Z</updated>
   <id>https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>异常处理和响应拦截</title>
+    <link href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2023/05/23/yi-chang-chu-li-he-xiang-ying-lan-jie/"/>
+    <id>https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2023/05/23/yi-chang-chu-li-he-xiang-ying-lan-jie/</id>
+    <published>2023-05-23T14:53:00.000Z</published>
+    <updated>2023-05-23T15:35:53.131Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1-前言&quot;&gt;&lt;a href=&quot;#1-前言&quot; class=&quot;headerlink&quot; title=&quot;1.前言&quot;&gt;&lt;/a&gt;1.前言&lt;/h1&gt;&lt;p&gt;这篇文章主要应该是代码的总结，过一个思路，总结一个相对完整的异常处理和响应拦截&lt;/p&gt;
+&lt;h1</summary>
+        
+      
+    
+    
+    
+    <category term="后端开发应用" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%E5%BA%94%E7%94%A8/"/>
+    
+    
+    <category term="java" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/tags/java/"/>
+    
+    <category term="SpringBoot" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/tags/SpringBoot/"/>
+    
+  </entry>
   
   <entry>
     <title>Lamda表达式和Stream流</title>
