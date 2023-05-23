@@ -6,7 +6,7 @@
   <link href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/atom.xml" rel="self"/>
   
   <link href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/"/>
-  <updated>2023-05-22T15:10:23.019Z</updated>
+  <updated>2023-05-23T09:42:57.015Z</updated>
   <id>https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Lamda表达式和Stream流</title>
+    <link href="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2023/05/23/lamda-biao-da-shi-he-stream-liu/"/>
+    <id>https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/2023/05/23/lamda-biao-da-shi-he-stream-liu/</id>
+    <published>2023-05-23T07:45:00.000Z</published>
+    <updated>2023-05-23T09:42:57.015Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h1 id=&quot;1-Lamda表达式&quot;&gt;&lt;a href=&quot;#1-Lamda表达式&quot; class=&quot;headerlink&quot; title=&quot;1.Lamda表达式&quot;&gt;&lt;/a&gt;1.Lamda表达式&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="后端" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+    <category term="java" scheme="https://github.com/Shirasawa-zs/Shirasawa-zs.github.io/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>SQL日期函数</title>
